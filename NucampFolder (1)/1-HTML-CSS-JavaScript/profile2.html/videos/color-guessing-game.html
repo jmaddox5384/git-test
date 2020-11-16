@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Color Guessing Game</title>
+    
+    <body>
+        <h1>Color Guessing Game</h1>
+        <button type="button" onclick = "runGame()">Start Game</button>
+        <script>
+            const COLOR_ARRAY =['blue', 'cyan', 'gold', 'gray', 'green', 'magenta', 'orange', 'red', 'white', 'yellow'];
+            COLOR_ARRAY.sort;
+            
+            function runGame(){
+                let guess ='';
+                let correct = false;
+                let numTries = 0;
+
+                const targetIndex = Math.floor(Math.random() * COLOR_ARRAY.length);
+                const target = COLOR_ARRAY[targetIndex];
+                
+                
+
+                  console.log(target);
+            
+                do {
+                    guess = prompt('I am thinking of one of these colors:\n\n' + COLOR_ARRAY + 'What color am I thinking?');
+                 if (guess === null) {
+                    alert('game is aborted');
+                    return;
+                }
+                correct = checkGuess(guess, target);
+             
+             
+            } while (!correct); 
+            alert('Congratulations! You are correct');
+        
+            alert('Congratulations! It took you' + numTries + 'tries');
+                correct = checkGuess(guess, target);
+                document.body.style.background = guess;
+                
+            }
+        
+            function checkGuess(guess, target){
+                let correct = false;
+                
+                if(!COLOR_ARRAY.includes(guess)){
+                    alert('This is not one of the colors');
+                }else if (guess>target){
+                    alert('guess is incorrect & higher than target');
+                }else if (guess<target){
+                    alert('guess is incorect & higher than target');
+                }else{
+                    correct = true;
+                }
+                
+                
+                return correct;
+                
+            }
+            </script>
+     
+    </head> 
+
+    </body>
+
+
+
+
+
+</html>
+
+
+
+

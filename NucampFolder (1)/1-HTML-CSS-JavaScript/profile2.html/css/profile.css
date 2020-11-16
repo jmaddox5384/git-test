@@ -1,0 +1,15 @@
+h1 {
+font-family: cursive;
+
+}
+img {
+    
+    border-radius: 200px ;
+    padding: 2px;
+    border: 1px solid black;
+    margin: 5px;
+}
+body {
+    background-image: url(https://www.discoverboating.com/sites/default/files/inline-images/new-or-pre-owned-boats.jpg)
+    
+}

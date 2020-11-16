@@ -1,0 +1,39 @@
+body {
+    background: cornsilk;
+    font-family: Tahoma, Arial, sans-serif;
+    
+}
+
+h1 {
+    color: rgb(255, 174, 0);
+    font: 32px Garamond, Helvetica, serif;
+    border: solid black 5px;
+
+    
+}
+
+table {
+    width: 50%;
+    border: dotted orangered;
+    font-family: cursive;
+}
+
+thead {
+    text-align: left;
+    border: dotted black;
+}
+
+label {
+    display: block;
+    border: solid rgb(21, 255, 0);
+}
+
+#submit-btn {
+    display: block;
+    background-color: red;
+    border: solid greenyellow
+    
+}
+address {
+    border: solid red
+}
